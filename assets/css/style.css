@@ -53,6 +53,11 @@ a
     display: flex;
 }
 
+.text_c
+{
+    text-align: center;
+}
+
 /* #endregion utilities */
 
 /* #region debug */
@@ -80,6 +85,12 @@ a
     color: var(--spo-grey);
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
+}
+
+.side_top
+{
+    overflow-y: auto;
 }
 
 .logo #logo
@@ -92,6 +103,11 @@ a
 {
     display: none;
     margin: 0.75rem 0;
+}
+
+.items
+{
+    line-height: 2rem;
 }
 
 .description_icon
@@ -136,7 +152,7 @@ a
 .account > hr
 {
     display: none;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0; 
 }
 
 .user
@@ -151,9 +167,10 @@ a
     margin-top: 0.5rem;
 }
 
-.user > span
+.user > strong
 {
     font-size: 1rem;
+    color: var(--spo-light);
 }
 
 
@@ -174,12 +191,64 @@ a
 
 /* #region bottom */
 
-.bottom
+footer.bottom
 {
     height: 80px;
     background-color: var(--spo-footer);
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
 
+.debug .tune
+{
+    background-color: yellow;
+    height: 100%;
+}
+
+.tune
+{
+    flex-grow: 1;
+}
+
+.debug .play
+{
+    background-color: blue;
+    height: 100%;
+}
+
+.play
+{
+    flex-grow: 3;
+}
+
+.top_play
+{
+    background-color: blueviolet;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bottom_play
+{
+    background-color: green;
+    height: 50%;
+}
+
+.debug .peripherals
+{
+    background-color: red;
+    height: 100%;
+}
+
+.peripherals
+{
+    flex-grow: 1;
+}
 
 /* #endregion bottom */
 

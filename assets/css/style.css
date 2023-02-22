@@ -43,23 +43,13 @@ a
 
 .container
 {
-    width: 90%;
+    width: 60%;
     margin: auto;
 }
 
 .d-flex
 {
     display: flex;
-}
-
-.p-logo
-{
-    padding: 0.25rem 0.75rem;
-}
-
-.p-icon
-{
-    padding: 0.25rem 0.75rem;
 }
 
 /* #endregion utilities */
@@ -91,28 +81,49 @@ a
 {
     width: 50px;
     background-color: var(--spo-dark);
+    color: var(--spo-grey);
     flex-direction: column;
     justify-content: space-between;
 }
 
-.side_top
+.logo #logo
 {
-    width: 100%;
+    padding-top: 0.5rem;
 }
+
 
 .logo #text_logo
 {
     display: none;
+    margin: 0.75rem 0;
 }
 
 .description_icon
 {
     display: none;
+    width: 85%;
+    align-self: center;
+    font-size: 0.75rem;
+    padding-left: 0.25rem;
 }
 
 .playlist
 {
     display: none;
+}
+
+.playlist h2
+{
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+}
+
+.playlist a
+{
+    color: var(--spo-grey);
+    font-size: 0.75rem;
+    line-height: 2rem;
+    vertical-align: top;
 }
 
 .side_bottom
@@ -149,10 +160,14 @@ a
 /* #region responsive */
 
 @media screen and ( min-width: 480px) {
+    .container
+    {
+        width: 80%;
+    }
+
     .sidebar
     {
-        width: 180px;
-        color: var(--spo-grey);
+        width: 200px;
     }
 
     .logo #logo
@@ -163,20 +178,16 @@ a
     .logo #text_logo
     {
         display: block;
-        margin: 0.75rem 0;
     }
 
     .icon
     {
-        width: 20%;
+        width: 15%;
     }
     
     .description_icon
     {
         display: block;
-        width: 80%;
-        align-self: center;
-        font-size: 0.75rem;
     }
 
     .playlist
@@ -186,7 +197,7 @@ a
 
     .content
     {
-        width: calc(100% - 180px);
+        width: calc(100% - 200px);
     }
 }
 

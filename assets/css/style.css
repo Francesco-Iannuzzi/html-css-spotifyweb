@@ -25,3 +25,19 @@ img
     --spo-evi: #adff2f;
 }
 /* #endregion utilities */
+
+/* #region responsive */
+
+@media screen and ( min-width: 480px) {
+    
+}
+
+@media screen and ( min-width: 768px) {
+    
+}
+
+@media screen and ( min-width: 1140px) {
+    
+}
+
+/* #endregion responsive */

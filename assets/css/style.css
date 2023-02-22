@@ -167,7 +167,7 @@ a
     margin-top: 0.5rem;
 }
 
-.user > strong
+.user > h2
 {
     font-size: 1rem;
     color: var(--spo-light);
@@ -202,26 +202,59 @@ footer.bottom
     z-index: 1000;
 }
 
-.debug .tune
-{
-    background-color: yellow;
-    height: 100%;
-}
-
 .tune
 {
-    flex-grow: 1;
+    width: 20%;
+
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-around;
+}
+
+.tune .cover
+{
+    width: 25%;
+    max-width: 60px;
+    align-self: center;
+}
+
+.tune img
+{
+    vertical-align: middle;
+}
+
+.tune h4
+{
+    color: var(--spo-light);
+    font-size: 0.75rem;
+}
+
+.tune span
+{
+    color: var(--spo-grey);
+    font-size: 0.5rem;
+}
+
+.tune .title
+{
+    width: 50%;
+}
+
+.tune .like
+{
+    width: 25%;
+    color: var(--spo-grey);
+    font-size: 0.75rem;
 }
 
 .debug .play
 {
     background-color: blue;
-    height: 100%;
 }
 
 .play
 {
-    flex-grow: 3;
+    width: 60%;
 }
 
 .top_play
@@ -242,12 +275,12 @@ footer.bottom
 .debug .peripherals
 {
     background-color: red;
-    height: 100%;
 }
 
 .peripherals
 {
-    flex-grow: 1;
+    width: 20%;
+    max-width: 180px;
 }
 
 /* #endregion bottom */
@@ -262,7 +295,7 @@ footer.bottom
 
     .sidebar
     {
-        width: 200px;
+        width: 180px;
     }
 
     .logo #logo
@@ -292,7 +325,7 @@ footer.bottom
 
     .content
     {
-        width: calc(100% - 200px);
+        width: calc(100% - 180px);
     }
 
     .account > hr
@@ -307,6 +340,10 @@ footer.bottom
 }
 
 @media screen and ( min-width: 768px) {
+    .tune
+    {
+        max-width: 180px;
+    }
     
 }
 

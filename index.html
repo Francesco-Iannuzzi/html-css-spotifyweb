@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body class="debug">
-    
+
     <div class="top d-flex">
 
         <div class="sidebar d-flex">
@@ -40,14 +44,14 @@
                         <li>
                             <a href="#" class="item d-flex">
                                 <img class="icon" src="./assets/img/libreria.svg" alt="">
-                            <h3 class="description_icon">La tua libreria</h3>
+                                <h3 class="description_icon">La tua libreria</h3>
                             </a>
                         </li>
                     </ul>
                     <!-- /items -->
 
                     <div class="playlist container">
-                        <h2>Playlist</h2>
+                        <h2>PLAYLIST</h2>
                         <ul>
                             <li>
                                 <i class="fa-solid fa-square-plus fa-2x"></i>
@@ -64,8 +68,8 @@
                     </div>
                 </nav>
                 <div>
-                <!-- /playlist -->
-                    
+                    <!-- /playlist -->
+
                 </div>
             </div>
             <!-- /side_top -->
@@ -84,7 +88,7 @@
 
                     <a href="#" class="user d-flex">
                         <img class="icon" src="./assets/img/profile.svg" alt="">
-                        <strong class="description_icon">John Doe</strong>
+                        <h2 class="description_icon">John Doe</h2>
                     </a>
                     <!-- /user -->
 
@@ -103,27 +107,47 @@
 
     <footer class="bottom d-flex">
 
-            <div class="tune"></div>
-            <!-- /tune -->
-    
-            <div class="play">
-                <div class="top_play d-flex">
-                    <i class="fa-solid fa-play"></i>
-                    <i class="fa-solid fa-play"></i>
-                    <i class="fa-solid fa-play"></i>
-                    <i class="fa-solid fa-play"></i>
-                    <i class="fa-solid fa-play"></i>
-                </div>
-                <div class="bottom_play"></div>
+        <div class="tune d-flex">
+            <div class="cover">
+                <img src="./assets/img/sinister.jpeg" alt="">
             </div>
-            <!-- /play -->
-    
-            <div class="peripherals"></div>
-            <!-- /peripherals -->
+            <div class="title">
+                <h4>Sinister</h4>
+                <span>Brano Nome</span>
+            </div>
+            <div class="like">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+        </div>
+        <!-- /tune -->
+
+        <div class="play">
+
+            <div class="top_play d-flex">
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <!-- /top_play -->
+
+            <div class="bottom_play d-flex">
+
+            </div>
+            <!-- /bottom_play -->
+
+        </div>
+        <!-- /play -->
+
+        <div class="peripherals d-flex"></div>
+        <!-- /peripherals -->
 
     </footer>
     <!-- /bottom -->
 
 
 </body>
+
 </html>

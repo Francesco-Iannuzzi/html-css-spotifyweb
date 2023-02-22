@@ -24,12 +24,86 @@ img
     --spo-grey: #a3a3a3;
     --spo-evi: #adff2f;
 }
+
+.d-flex
+{
+    display: flex;
+}
+
 /* #endregion utilities */
+
+/* #region debug */
+
+.debug .top
+{
+    background-color: blue;
+}
+
+.debug .bottom
+{
+    background-color: red;
+}
+
+.debug .sidebar
+{
+    background-color: green;
+}
+
+.debug .content
+{
+    background-color: yellow;
+}
+
+/* #endregion debug */
+
+/* #region top */
+
+.top
+{
+    height: calc(100vh - 80px);
+}
+
+/* #region sidebar */
+
+.sidebar
+{
+    width: 60px;
+}
+
+/* #endregion sidebar */
+
+/* #region content */
+
+.content
+{
+    width: calc(100% - 60px);
+}
+
+/* #endregion content */
+
+/* #endregion top */
+
+/* #region bottom */
+
+.bottom
+{
+    height: 80px;
+}
+
+/* #endregion bottom */
 
 /* #region responsive */
 
 @media screen and ( min-width: 480px) {
-    
+    .sidebar
+    {
+        width: 180px;
+    }
+
+    .content
+    {
+        width: calc(100% - 180px);
+    }
 }
 
 @media screen and ( min-width: 768px) {

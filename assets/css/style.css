@@ -1,0 +1,27 @@
+/* #region common */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+/* #endregion common */
+
+/* #region utilities */
+:root
+{
+    --spo-dark: #000000;
+    --spo-footer: #282828;
+    --spo-content: #141922;
+    --spo-light: #ffffff;
+    --spo-grey: #a3a3a3;
+    --spo-evi: #adff2f;
+}
+/* #endregion utilities */

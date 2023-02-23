@@ -129,7 +129,7 @@ a
 .logo #text_logo
 {
     display: none;
-    margin: 0.75rem 0;
+    margin: 1rem 0;
 }
 
 .items
@@ -181,10 +181,15 @@ a
     margin: 0.25rem 0;
 }
 
+.downloads span
+{
+    color: var(--spo-grey);
+}
+
 .account > hr
 {
     display: none;
-    margin: 0.5rem 0; 
+    margin: 0.5rem 0;
 }
 
 .user
@@ -223,6 +228,7 @@ a
     position: sticky;
     top: 0;
     right: 0;
+    z-index: 500;
     height: 80px;
     width: 100%;
     background-color: #000000cf;
@@ -237,12 +243,7 @@ a
     border-radius: 3rem;
     color: var(--spo-light);
     padding: 0.5rem 1rem;
-    margin-right: 1rem;
-}
-
-a:hover .underline
-{
-    background-color: var(--spo-evi);
+    margin-right: 3rem;
 }
 
 .category
@@ -415,6 +416,32 @@ footer.bottom
 
 /* #endregion bottom */
 
+/* #region animation */
+
+.upgrade a:hover
+{
+    transform: scale(1.2);
+}
+
+li:hover a,
+li:hover i,
+.downloads span:hover
+{
+    color: var(--spo-light);
+}
+
+a:hover .underline
+{
+    background-color: var(--spo-evi);
+}
+
+.tune .title_footer span:hover
+{
+    text-decoration: underline;
+}
+
+/* #endregion animation */
+
 /* #region responsive */
 
 @media screen and ( min-width: 500px) {
@@ -452,6 +479,11 @@ footer.bottom
     .playlist
     {
         display: block;
+    }
+
+    .playlist h2
+    {
+        color: var(--spo-light);
     }
 
     .app_main

@@ -139,6 +139,7 @@ a
 .items .item
 {
     margin: 0.5rem 0;
+    border-left: 3px solid transparent;
 }
 
 .description_icon
@@ -368,7 +369,7 @@ footer.bottom
 {
     flex-grow: 1;
     color: var(--spo-grey);
-    font-size: 0.5rem;
+    font-size: 0.75rem;
 }
 
 .like i,
@@ -433,13 +434,18 @@ footer.bottom
 
 .peripherals i
 {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     color: var(--spo-light);
 }
 
 /* #endregion bottom */
 
 /* #region animation */
+
+.items .item:hover
+{
+    border-left: 3px solid var(--spo-evi);
+}
 
 .upgrade a:hover
 {
@@ -467,6 +473,11 @@ a:hover .underline
 .tune .title_footer span:hover
 {
     text-decoration: underline;
+}
+
+.tune .like i:hover
+{
+    color: var(--spo-light);
 }
 
 .top_play i:nth-child(3):hover

@@ -116,7 +116,6 @@ a
 
 .side_top
 {
-    overflow-y: auto;
     overflow: hidden;
 }
 
@@ -219,8 +218,8 @@ a
 {
     width: calc(100% - 50px);
     background-color: var(--spo-content);
-    overflow-y: auto;
     position: relative;
+    overflow-y: auto;
 }
 
 .upgrade
@@ -283,7 +282,23 @@ a
 {
     background-color: var(--spo-content);
     margin: 0.5rem;
+}
+
+.cover
+{
     position: relative;
+}
+
+.play_on_cover
+{
+    position: absolute;
+    top: calc(50% - 2rem);
+    left: calc(50% - 1.5rem);
+    width: 100%;
+    height: 100%;
+    color: var(--spo-light);
+    font-size: 3rem;
+    display: none;
 }
 
 .title h2
@@ -313,6 +328,7 @@ footer.bottom
 .tune
 {
     flex-grow: 1;
+    max-width: 180px;
     align-items: center;
     gap: 0.5rem;
     justify-content: space-around;
@@ -323,6 +339,7 @@ footer.bottom
     flex-grow: 1;
     max-width: 50px;
     align-self: center;
+    margin-left: 10px;
 }
 
 .tune img
@@ -344,19 +361,25 @@ footer.bottom
 
 .tune .title_footer
 {
-    flex-grow: 2;
+    flex-grow: 3;
 }
 
 .tune .like
 {
     flex-grow: 1;
     color: var(--spo-grey);
-    font-size: 0.75rem;
+    font-size: 0.5rem;
+}
+
+.like i,
+.peripherals i
+{
+    margin: 0.25rem;
 }
 
 .play
 {
-    flex-grow: 5;
+    flex-grow: 2;
     color: var(--spo-light);
 }
 
@@ -390,22 +413,22 @@ footer.bottom
 {
     background-color: var(--spo-grey);
     border-radius: 1rem;
-    width: 70%;
+    width: 60%;
+    max-width: 500px;
     padding: 1px 0;
     margin: 0 1rem;
 }
 
 .peripherals
 {
-    flex-grow: 2;
+    flex-grow: 1;
+    max-width: 180px;
     align-items: center;
-    justify-content: space-around;
 }
 
 .peripherals > .d-flex
 {
     justify-content: space-between;
-    gap: 0.25rem;
 }
 
 .peripherals i
@@ -435,9 +458,20 @@ a:hover .underline
     background-color: var(--spo-evi);
 }
 
+
+.card:hover .play_on_cover
+{
+    display: block;
+}
+
 .tune .title_footer span:hover
 {
     text-decoration: underline;
+}
+
+.top_play i:nth-child(3):hover
+{
+    transform: scale(1.2);
 }
 
 /* #endregion animation */

@@ -205,7 +205,7 @@ footer.bottom
 
 .tune
 {
-    flex-grow: 1;
+    width: 20%;
     align-items: center;
     gap: 0.5rem;
     justify-content: space-around;
@@ -249,7 +249,7 @@ footer.bottom
 
 .play
 {
-    flex-grow: 3;
+    width: 60%;
     color: var(--spo-light);
 }
 
@@ -269,7 +269,8 @@ footer.bottom
     align-items: center;
 }
 
-.play_bar
+.play_bar,
+.volume_bar
 {
     background-color: var(--spo-grey);
     border-radius: 1rem;
@@ -283,15 +284,24 @@ footer.bottom
     font-size: 0.5rem;
 }
 
-.debug .peripherals
-{
-    background-color: red;
-}
 
 .peripherals
 {
-    flex-grow: 1;
-    max-width: 180px;
+    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.peripherals > .d-flex
+{
+    justify-content: space-between;
+    gap: 0.25rem;
+}
+
+.peripherals i
+{
+    font-size: 0.75rem;
+    color: var(--spo-light);
 }
 
 /* #endregion bottom */

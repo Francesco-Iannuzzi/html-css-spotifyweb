@@ -69,6 +69,15 @@ a
     text-align: center;
 }
 
+.underline
+{
+    background-color: var(--spo-content);
+    color: var(--spo-evi);
+    height: 2px;
+    width: 2rem;
+    margin: 0.25rem auto;
+}
+
 /* #endregion utilities */
 
 /* #region debug */
@@ -77,7 +86,7 @@ a
 {
     background-color: green;
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100vh
 }
 
 /* #endregion debug */
@@ -122,6 +131,11 @@ a
 .items
 {
     line-height: 2rem;
+}
+
+.items .item
+{
+    margin: 0.5rem 0;
 }
 
 .description_icon
@@ -222,9 +236,14 @@ a
     margin-right: 1rem;
 }
 
+a:hover .underline
+{
+    background-color: var(--spo-evi);
+}
+
 .category
 {
-    padding-top: 100px;
+    padding-top: 1rem;
 }
 
 .category ul

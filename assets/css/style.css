@@ -45,7 +45,7 @@ a
 
 .p-nav
 {
-    padding: 0 0.5rem;
+    padding: 0 0.75rem;
 }
 
 .d-flex
@@ -196,16 +196,16 @@ footer.bottom
 {
     height: 80px;
     background-color: var(--spo-footer);
-    width: 100%;
     position: sticky;
     bottom: 0;
     left: 0;
     z-index: 1000;
+    justify-content: space-around;
 }
 
 .tune
 {
-    width: 20%;
+    flex-grow: 1;
     align-items: center;
     gap: 0.5rem;
     justify-content: space-around;
@@ -213,7 +213,7 @@ footer.bottom
 
 .tune .cover
 {
-    width: 25%;
+    flex-grow: 1;
     max-width: 60px;
     align-self: center;
 }
@@ -237,19 +237,19 @@ footer.bottom
 
 .tune .title
 {
-    width: 50%;
+    flex-grow: 2;
 }
 
 .tune .like
 {
-    width: 25%;
+    flex-grow: 1;
     color: var(--spo-grey);
     font-size: 0.75rem;
 }
 
 .play
 {
-    width: 60%;
+    flex-grow: 5;
     color: var(--spo-light);
 }
 
@@ -257,7 +257,7 @@ footer.bottom
 {
     height: 50%;
     margin: auto;
-    max-width: 60%;
+    max-width: 70%;
     justify-content: space-around;
     align-items: center;
 }
@@ -267,6 +267,11 @@ footer.bottom
     height: 50%;
     justify-content: center;
     align-items: center;
+}
+
+.bottom_play span
+{
+    font-size: 0.5rem;
 }
 
 .play_bar,
@@ -279,15 +284,9 @@ footer.bottom
     margin: 0 1rem;
 }
 
-.bottom_play span
-{
-    font-size: 0.5rem;
-}
-
-
 .peripherals
 {
-    width: 20%;
+    flex-grow: 2;
     align-items: center;
     justify-content: space-around;
 }
@@ -300,7 +299,7 @@ footer.bottom
 
 .peripherals i
 {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
     color: var(--spo-light);
 }
 

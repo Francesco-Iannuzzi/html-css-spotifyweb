@@ -22,13 +22,13 @@
             <div class="side_top">
                 <nav class="main_menu">
 
-                    <div class="logo container">
+                    <div class="logo p-nav">
                         <a href="#"><img id="logo" src="./assets/img/logo-small.svg" alt=""></a>
                         <a href="#"><img id="text_logo" src="./assets/img/logo.svg" alt=""></a>
                     </div>
                     <!-- /logo -->
 
-                    <ul class="items container">
+                    <ul class="items p-nav">
                         <li>
                             <a href="#" class="item d-flex">
                                 <img class="icon" src="./assets/img/home.svg" alt="">
@@ -50,21 +50,23 @@
                     </ul>
                     <!-- /items -->
 
-                    <div class="playlist container">
+                    <div class="playlist p-nav">
                         <h2>PLAYLIST</h2>
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-square-plus fa-2x"></i>
-                                <a href="#">Crea Playlist</a>
-                            </li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                        </ul>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-square-plus fa-2x"></i>
+                                    <a href="#">Crea Playlist</a>
+                                </li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
                 <div>
@@ -76,7 +78,7 @@
 
             <div class="side_bottom">
 
-                <div class="account container">
+                <div class="account p-nav">
 
                     <a href="#" class="downloads d-flex">
                         <img class="icon" src="./assets/img/download.svg" alt="">
@@ -125,23 +127,27 @@
         <div class="play">
 
             <div class="top_play d-flex">
-                <i class="fa-solid fa-play"></i>
-                <i class="fa-solid fa-play"></i>
-                <i class="fa-solid fa-play"></i>
-                <i class="fa-solid fa-play"></i>
-                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
             </div>
             <!-- /top_play -->
 
             <div class="bottom_play d-flex">
-
+                <span>0:25</span>
+                <div class="play_bar"></div>
+                <span>4:35</span>
             </div>
             <!-- /bottom_play -->
 
         </div>
         <!-- /play -->
 
-        <div class="peripherals d-flex"></div>
+        <div class="peripherals d-flex">
+
+        </div>
         <!-- /peripherals -->
 
     </footer>

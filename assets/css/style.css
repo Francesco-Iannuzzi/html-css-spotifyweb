@@ -54,7 +54,7 @@ a
 
 .container
 {
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
@@ -64,9 +64,20 @@ a
    flex-wrap: wrap;
 }
 
+.col_6
+{
+    width: calc(100% /12 * 6);
+}
+
+
 .text_c
 {
     text-align: center;
+}
+
+.my-2
+{
+    margin: 2rem 0;
 }
 
 .underline
@@ -81,13 +92,6 @@ a
 /* #endregion utilities */
 
 /* #region debug */
-
-.debug .contents
-{
-    background-color: green;
-    width: 100%;
-    height: 100vh
-}
 
 /* #endregion debug */
 
@@ -221,7 +225,7 @@ a
     right: 0;
     height: 80px;
     width: 100%;
-    background-color: #000000bd;
+    background-color: #000000cf;
     justify-content: flex-end;
     align-items: center;
 }
@@ -259,6 +263,35 @@ a:hover .underline
     color: var(--spo-grey);
     font-size: 0.75rem;
 }
+
+.title_category h1
+{
+    color: var(--spo-light);
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+.contents span
+{
+    color: var(--spo-grey);
+    line-height: 1rem;
+    font-size: 0.75rem;
+}
+
+.contents .card
+{
+    background-color: var(--spo-content);
+    margin: 0.5rem;
+    position: relative;
+}
+
+.title h2
+{
+    color: var(--spo-light);
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
 /* #endregion app_main */
 
 /* #endregion top */
@@ -284,7 +317,7 @@ footer.bottom
     justify-content: space-around;
 }
 
-.tune .cover
+.tune .cover_footer
 {
     flex-grow: 1;
     max-width: 50px;
@@ -308,7 +341,7 @@ footer.bottom
     font-size: 0.5rem;
 }
 
-.tune .title
+.tune .title_footer
 {
     flex-grow: 2;
 }
@@ -438,12 +471,18 @@ footer.bottom
 }
 
 @media screen and ( min-width: 768px) {
-
+    .col_md_3
+    {
+        width: calc(100% / 12 * 3);
+    }
     
 }
 
 @media screen and ( min-width: 1140px) {
-    
+    .col_lg_2
+    {
+        width: calc(100% / 12 * 2);
+    }
 }
 
 /* #endregion responsive */

@@ -10,7 +10,6 @@
 body
 {
     font-family: 'Circular Std', sans-serif;
-    min-height: 350px;
 }
 
 
@@ -59,6 +58,12 @@ a
     margin: auto;
 }
 
+.row
+{
+   display: flex;
+   flex-wrap: wrap;
+}
+
 .text_c
 {
     text-align: center;
@@ -67,25 +72,6 @@ a
 /* #endregion utilities */
 
 /* #region debug */
-
-.debug .app_main
-{
-    background-color: red;
-}
-
-.debug .content
-{
-    background-color: yellow;
-    width: 100%;
-    height: 100%;
-}
-
-.debug .category
-{
-    background-color: violet;
-    width: 100%;
-    height: 60px;
-}
 
 .debug .contents
 {
@@ -218,7 +204,7 @@ a
 {
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
     height: 80px;
     width: 100%;
     background-color: #000000bd;
@@ -228,18 +214,32 @@ a
 
 .upgrade a
 {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     border: 1px solid var(--spo-light);
     border-radius: 3rem;
     color: var(--spo-light);
     padding: 0.5rem 1rem;
     margin-right: 1rem;
 }
-/* .category
-{
-    padding-top: 80px;
-} */
 
+.category
+{
+    padding-top: 100px;
+}
+
+.category ul
+{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+.category a
+{
+    color: var(--spo-grey);
+    font-size: 0.75rem;
+}
 /* #endregion app_main */
 
 /* #endregion top */
@@ -310,11 +310,14 @@ footer.bottom
 .top_play
 {
     height: 50%;
-    margin: auto;
-    padding-top: 1rem;
-    max-width: 40%;
-    justify-content: space-around;
+    padding-top: 0.5rem;
+    justify-content: center;
     align-items: center;
+}
+
+.top_play i
+{
+    margin: 0 1rem;
 }
 
 .bottom_play

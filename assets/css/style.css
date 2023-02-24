@@ -203,8 +203,9 @@ a:hover .underline
     color: var(--spo-light);
 }
 
-.list h3
+.list span
 {
+    font-size: 0.9rem;
     margin-left: 0.25rem;
 }
 

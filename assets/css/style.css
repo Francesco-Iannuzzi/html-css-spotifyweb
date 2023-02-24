@@ -29,6 +29,13 @@ a
     color: var(--spo-grey);
 }
 
+button
+{
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
 /* #endregion common */
 
 /* #region utilities */
@@ -89,6 +96,11 @@ a
     margin: 0.25rem auto;
 }
 
+a:hover .underline
+{
+    background-color: var(--spo-evi);
+}
+
 /* #endregion utilities */
 
 /* #region debug */
@@ -116,7 +128,7 @@ a
 
 .side_top
 {
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .logo #logo
@@ -142,6 +154,11 @@ a
     border-left: 3px solid transparent;
 }
 
+.items .item:hover
+{
+    border-left: 3px solid var(--spo-evi);
+}
+
 .description_icon
 {
     display: none;
@@ -156,18 +173,39 @@ a
     display: none;
 }
 
-.playlist h2
+.playlist > h2
 {
     font-size: 1.25rem;
     margin: 2rem 0 0.75rem;
 }
 
-.playlist a
+.playlist button
 {
     color: var(--spo-grey);
     font-size: 0.75rem;
     line-height: 2rem;
     vertical-align: top;
+}
+
+.list > div
+{
+    line-height: 2rem;
+}
+
+.list .d-flex
+{
+    align-items: center;
+}
+
+.list h3
+{
+    margin-left: 0.25rem;
+}
+
+.list ul
+{
+    height: 300px;
+    overflow-y: auto;
 }
 
 .side_bottom
@@ -184,6 +222,14 @@ a
 .downloads span
 {
     color: var(--spo-grey);
+}
+
+.list button:hover,
+li:hover button,
+li:hover i,
+.downloads span:hover
+{
+    color: var(--spo-light);
 }
 
 .account > hr
@@ -243,7 +289,12 @@ a
     border-radius: 3rem;
     color: var(--spo-light);
     padding: 0.5rem 1rem;
-    margin-right: 3rem;
+    margin-right: 2rem;
+}
+
+.upgrade a:hover
+{
+    transform: scale(1.2);
 }
 
 .category
@@ -283,6 +334,11 @@ a
 {
     background-color: var(--spo-content);
     margin: 0.5rem;
+}
+
+.card:hover .play_on_cover
+{
+    display: block;
 }
 
 .cover
@@ -360,28 +416,40 @@ footer.bottom
     font-size: 0.5rem;
 }
 
+.tune button
+{
+    color: var(--spo-grey);
+    font-size: 0.75rem;
+}
+
 .tune .title_footer
 {
     flex-grow: 3;
 }
 
+.tune .title_footer span:hover
+{
+    text-decoration: underline;
+}
+
 .tune .like
 {
     flex-grow: 1;
-    color: var(--spo-grey);
-    font-size: 0.75rem;
 }
 
-.like i,
-.peripherals i
+.like button
 {
-    margin: 0.25rem;
+    display: block;
+}
+
+.tune .like i:hover
+{
+    color: var(--spo-light);
 }
 
 .play
 {
     flex-grow: 2;
-    color: var(--spo-light);
 }
 
 .top_play
@@ -395,6 +463,12 @@ footer.bottom
 .top_play i
 {
     margin: 0 0.5rem;
+    color: var(--spo-light);
+}
+
+.top_play button:nth-child(3):hover
+{
+    transform: scale(1.2);
 }
 
 .bottom_play
@@ -407,6 +481,7 @@ footer.bottom
 .bottom_play span
 {
     font-size: 0.5rem;
+    color: var(--spo-light);
 }
 
 .play_bar,
@@ -438,54 +513,20 @@ footer.bottom
     color: var(--spo-light);
 }
 
-/* #endregion bottom */
-
-/* #region animation */
-
-.items .item:hover
+.peripherals button:nth-child(1),
+.peripherals button:nth-child(2)
 {
-    border-left: 3px solid var(--spo-evi);
+    display: none;
 }
 
-.upgrade a:hover
-{
-    transform: scale(1.2);
-}
-
-li:hover a,
-li:hover i,
-.downloads span:hover
-{
-    color: var(--spo-light);
-}
-
-a:hover .underline
-{
-    background-color: var(--spo-evi);
-}
-
-
-.card:hover .play_on_cover
+.like button,
+.peripherals button
 {
     display: block;
+    margin: 0.25rem;
 }
 
-.tune .title_footer span:hover
-{
-    text-decoration: underline;
-}
-
-.tune .like i:hover
-{
-    color: var(--spo-light);
-}
-
-.top_play i:nth-child(3):hover
-{
-    transform: scale(1.2);
-}
-
-/* #endregion animation */
+/* #endregion bottom */
 
 /* #region responsive */
 
@@ -529,6 +570,7 @@ a:hover .underline
     .playlist h2
     {
         color: var(--spo-light);
+        font-size: 1rem;
     }
 
     .app_main
@@ -552,7 +594,18 @@ a:hover .underline
     {
         width: calc(100% / 12 * 3);
     }
-    
+
+    .like button
+    {
+        display: inline-block;
+    }
+
+    .peripherals button:nth-child(1),
+    .peripherals button:nth-child(2)
+    {
+        display: block;
+    }
+
 }
 
 @media screen and ( min-width: 1140px) {

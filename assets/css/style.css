@@ -321,6 +321,11 @@ li:hover i,
     font-size: 0.75rem;
 }
 
+.category a:hover
+{
+    color: var(--spo-light);
+}
+
 .title_category h1
 {
     color: var(--spo-light);
@@ -462,6 +467,11 @@ footer.bottom
     color: var(--spo-light);
 }
 
+.tune .like i:nth-child(1):active
+{
+    color: red;
+}
+
 .play
 {
     flex-grow: 2;
@@ -473,12 +483,18 @@ footer.bottom
     padding-top: 0.5rem;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .top_play i
 {
     margin: 0 0.5rem;
     color: var(--spo-light);
+}
+
+.top_play button:hover
+{
+    transform: scale(1.2);
 }
 
 .top_play button:nth-child(3):hover
@@ -650,6 +666,11 @@ footer.bottom
     {
         display: inline-block;
         margin: 0.25rem;
+    }
+
+    .top_play
+    {
+        gap: 1rem;
     }
 
 }

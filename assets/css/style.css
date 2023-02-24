@@ -157,6 +157,7 @@ a:hover .underline
 .items .item:hover
 {
     border-left: 3px solid var(--spo-evi);
+    color: var(--spo-light);
 }
 
 .description_icon
@@ -197,6 +198,11 @@ a:hover .underline
     align-items: center;
 }
 
+.list button:hover
+{
+    color: var(--spo-light);
+}
+
 .list h3
 {
     margin-left: 0.25rem;
@@ -224,7 +230,6 @@ a:hover .underline
     color: var(--spo-grey);
 }
 
-.list button:hover,
 li:hover button,
 li:hover i,
 .downloads span:hover
@@ -387,8 +392,6 @@ footer.bottom
     flex-grow: 1;
     max-width: 180px;
     align-items: center;
-    gap: 0.5rem;
-    justify-content: space-around;
 }
 
 .tune .cover_footer
@@ -414,6 +417,12 @@ footer.bottom
 {
     color: var(--spo-grey);
     font-size: 0.5rem;
+}
+
+.tune h4,
+.tune span
+{
+    margin-left: 0.25rem;
 }
 
 .tune button
@@ -540,7 +549,7 @@ footer.bottom
 .peripherals button
 {
     display: block;
-    margin: 0.25rem;
+    margin: 0.25rem 0;
 }
 
 /* #endregion bottom */
@@ -628,6 +637,13 @@ footer.bottom
     .peripherals button:nth-child(2)
     {
         display: block;
+    }
+
+    .like button,
+    .peripherals button
+    {
+        display: block;
+        margin: 0.25rem;
     }
 
 }

@@ -351,6 +351,11 @@ li:hover i,
     position: relative;
 }
 
+.card:hover .cover img
+{
+    filter: opacity(0.5);
+}
+
 .play_on_cover
 {
     position: absolute;
@@ -361,6 +366,7 @@ li:hover i,
     color: var(--spo-light);
     font-size: 3rem;
     display: none;
+    z-index: 1;
 }
 
 .title h2

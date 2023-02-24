@@ -204,7 +204,7 @@ a:hover .underline
 
 .list ul
 {
-    height: 300px;
+    height: 400px;
     overflow-y: auto;
 }
 
@@ -468,7 +468,7 @@ footer.bottom
 
 .top_play button:nth-child(3):hover
 {
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 .bottom_play
@@ -493,6 +493,23 @@ footer.bottom
     max-width: 500px;
     padding: 1px 0;
     margin: 0 1rem;
+}
+
+.progress
+{
+    background-color: var(--spo-evi);
+    border-radius: 1rem;
+    width: 35%;
+    max-width: 500px;
+    padding: 1px 0;
+    text-align: start;
+    display: none;
+}
+
+.volume_bar:hover .progress,
+.play_bar:hover .progress
+{
+    display: block;
 }
 
 .peripherals
@@ -586,6 +603,13 @@ footer.bottom
     .user img
     {
         margin-top: 0;
+    }
+}
+
+@media screen and ( max-width: 400px) {
+    .cover_footer img
+    {
+        display: none;
     }
 }
 
